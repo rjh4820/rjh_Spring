@@ -26,7 +26,7 @@
   <Listener SSLEngine="on" className="org.apache.catalina.core.AprLifecycleListener"/>
   <!-- Prevent memory leaks due to use of particular java/javax APIs-->
   <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener"/>
-  <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener"></Listener>
+  <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener"/>
   <Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener"/>
 
   <!-- Global JNDI resources
@@ -152,7 +152,11 @@
       <Context docBase="testPjt007_MVCnoneSTS" path="/testPjt007" reloadable="true" source="org.eclipse.jst.jee.server:testPjt007_MVCnoneSTS"/>
       <Context docBase="testPjt006_MVC" path="/testPjt006" reloadable="true" source="org.eclipse.jst.jee.server:testPjt006_MVC"/>
       <Context docBase="testPjt008_ServiceDaoAndController" path="/testPjt008" reloadable="true" source="org.eclipse.jst.jee.server:testPjt008_ServiceDaoAndController"/>
-      <Context docBase="testPjt009_Controller" path="/testPjt009" reloadable="true" source="org.eclipse.jst.jee.server:testPjt009_Controller"/></Host>
+      <Context docBase="testPjt009_Controller" path="/lec19" reloadable="true" source="org.eclipse.jst.jee.server:testPjt009_Controller"/>
+      <Context docBase="testPjt010_Session" path="/lec20" reloadable="true" source="org.eclipse.jst.jee.server:testPjt010_Session"/>
+      <Context docBase="testPjt010_Cookie" path="/lec20_1" reloadable="true" source="org.eclipse.jst.jee.server:testPjt010_Cookie"/>
+      <Context docBase="testPjt011_Redirect" path="/lec21" reloadable="true" source="org.eclipse.jst.jee.server:testPjt011_Redirect"/>
+      <Context docBase="testPjt011_Interceptor" path="/lec21_1" reloadable="true" source="org.eclipse.jst.jee.server:testPjt011_Interceptor"/></Host>
     </Engine>
   </Service>
 </Server>
